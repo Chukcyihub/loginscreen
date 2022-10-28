@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:my_login/screens/sign_up.dart';
 
-class LoginScreen extends StatefulWidget {
-  const LoginScreen({super.key});
+class SignUpScreen extends StatefulWidget {
+  const SignUpScreen({super.key});
 
   @override
-  State<LoginScreen> createState() => _LoginScreenState();
+  State<SignUpScreen> createState() => _SignUpScreenState();
 }
 
-class _LoginScreenState extends State<LoginScreen> {
-  bool rememberMe = false;
+class _SignUpScreenState extends State<SignUpScreen> {
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -76,13 +74,9 @@ class _LoginScreenState extends State<LoginScreen> {
                 padding: const EdgeInsets.symmetric(vertical: 20.0),
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12.0)),
-                onPressed: () {
-                  Navigator.of(context).push(MaterialPageRoute(
-                    builder: ((context) => const SignUpScreen()),
-                  ));
-                },
+                onPressed: () {},
                 child: const Text(
-                  "Login",
+                  "Create Account",
                   style: TextStyle(color: Colors.white, fontSize: 18.0),
                 ),
               ),
